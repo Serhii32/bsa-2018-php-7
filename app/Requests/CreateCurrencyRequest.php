@@ -6,8 +6,16 @@ class CreateCurrencyRequest
 {
     private $name;
 
+    public function __construct(string $currencyName) {
+
+    	$this->name = $currencyName;
+
+    }
+
     public function getName(): string
     {
-        // todo implement
+        
+    	return $this->name;
+
     }
 }
